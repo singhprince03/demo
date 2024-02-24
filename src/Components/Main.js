@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Card, CardBody } from '@material-tailwind/react';
 import Chart from 'react-apexcharts';
 
@@ -7,7 +7,7 @@ const chartConfig = {
   height: 240,
   series: [
     {
-      name: 'Sales',
+      name: '',
       data: [50, 40, 300, 320, 500, 350, 200, 230, 500],
     },
   ],
@@ -96,7 +96,7 @@ function Main() {
     <main className='relative h-screen overflow-hidden bg-gray-100 dark:bg-gray-800 rounded-2xl'>
       <div className='flex items-start justify-between'>
         <div className='relative hidden h-screen my-4 ml-4 shadow-lg lg:block w-80'>
-          <div className='h-full bg-white rounded-2xl dark:bg-gray-700'>
+          <div className='h-full bg-[#080a1e] rounded-2xl dark:bg-gray-700'>
             <div className='flex items-center justify-center pt-6'>
               <svg
                 width='35'
@@ -437,16 +437,21 @@ function Main() {
                     </div>
                     <div className='flex items-center justify-start my-4 space-x-4'>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 512 512'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path d='M431.3 388.8c7.5-6.3 16.7-16.1 16.7-31.4 0-13.7-5.7-22.8-10.9-29.1-.6-1.2-1.1-2.3-1.6-3.4l-.2-1.1c-.7-3.5 0-7.1 2-10 3.4-5 5.8-12.3 5.8-25.7 0-11.6-4.8-18.4-9.7-23.2-4.4-4.3-6.1-12.5-4.1-18.3 4.8-13.9.2-28.4-8.2-37.8-10.5-11.8-20.3-13.2-46.4-11.7-18 1.1-55.5 6.9-80.2 10.8-10.1 1.6-18.9 3-21.6 3.2-12.7 1.3-15.2 0-16.4-4.9-.5-2.1 1.9-6.9 4.9-13 4-8.1 9.5-19.2 14.5-35.8 10.1-33.2 9-69.2-2.7-90.2-5.5-9.9-14.8-19.1-26.3-19.1S223.6 50.5 219 56c-3.4 4-2.3 11.6-6.2 26.8-3.1 12.4-7 30.9-12 42-7.5 16.6-39.7 45.1-57 60.4-4.1 3.6-7.6 6.7-10.1 9.1-8.7 8.1-17.6 21.1-25.5 32.7-5.4 7.8-10.4 15.2-13.7 18.5-7.1 7.1-16.6 10.9-22.3 10.9-4.4 0-8 3.6-8 8v159.5c0 4.6 3.7 8.3 8.3 8.3 35.5 0 50.5 5.8 66.4 11.8 12.2 4.7 24.9 9.5 46.4 12.1 32.4 4 74.2 8.1 112.6 8.1 20.4 0 39.9-2 56.6-3.9 31-3.6 64.2-10.8 75.2-37 4.1-9.7 2.2-17.6-.5-23.7-.4-.8-.7-1.7-.8-2.6-.6-3.3.6-6.3 2.9-8.2z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold text-gray-500 '>
                           RENDERING JOBS
                         </span>
@@ -455,16 +460,21 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 512 512'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path d='M232.9 371.6c0 12.7 10.4 23.1 23.1 23.1s23.1-10.4 23.1-23.1c0-12.7-10.4-23.1-23.1-23.1s-23.1 10.3-23.1 23.1zm0-323.6v92.4h46.2V96.1c78.3 11.3 138.7 78.3 138.7 159.9 0 89.4-72.3 161.8-161.8 161.8S94.2 345.4 94.2 256c0-38.8 13.6-74.4 36.5-102.2L256 279.1l32.6-32.6L131.4 89.4v.5C80.8 127.7 48 187.8 48 256c0 114.9 92.9 208 208 208 114.9 0 208-93.1 208-208S370.9 48 256 48h-23.1zm161.8 208c0-12.7-10.4-23.1-23.1-23.1-12.7 0-23.1 10.4-23.1 23.1s10.4 23.1 23.1 23.1c12.7 0 23.1-10.4 23.1-23.1zm-277.4 0c0 12.7 10.4 23.1 23.1 23.1s23.1-10.4 23.1-23.1-10.4-23.1-23.1-23.1-23.1 10.4-23.1 23.1z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold text-gray-500'>
                           WAITING JOBS
                         </span>
@@ -473,16 +483,23 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 24 24'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <g id='Monitor'>
+                              <path d='M18.435,3.06H5.565a2.5,2.5,0,0,0-2.5,2.5v8.88a2.507,2.507,0,0,0,2.5,2.5h2.91l-.37,3H7a.5.5,0,0,0,0,1h10.01a.5.5,0,0,0,0-1H15.9l-.37-3h2.91a2.507,2.507,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.435,3.06ZM14.9,19.94H9.115l.37-3h5.03Zm5.04-5.5a1.5,1.5,0,0,1-1.5,1.5H5.565a1.5,1.5,0,0,1-1.5-1.5V5.56a1.5,1.5,0,0,1,1.5-1.5h12.87a1.5,1.5,0,0,1,1.5,1.5Z'></path>
+                            </g>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
                           COMPLETED JOBS
                         </span>
@@ -491,16 +508,26 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 24 24'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path
+                              fill='none'
+                              d='M0 0h24v24H0z'
+                            ></path>
+                            <path d='M20 4H4c-1.1 0-2 .9-2 2v3h2V6h16v3h2V6c0-1.1-.9-2-2-2zM20 18H4v-3H2v3c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-3h-2v3z'></path>
+                            <path d='M14.89 7.55c-.34-.68-1.45-.68-1.79 0L10 13.76l-1.11-2.21A.988.988 0 0 0 8 11H2v2h5.38l1.72 3.45c.18.34.52.55.9.55s.72-.21.89-.55L14 10.24l1.11 2.21c.17.34.51.55.89.55h6v-2h-5.38l-1.73-3.45z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
                           FAILED JOBS
                         </span>
@@ -534,16 +561,21 @@ function Main() {
                     </div>
                     <div className='flex items-center justify-start my-4 space-x-4'>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 512 512'
+                            class='icons'
+                            height='0.5em'
+                            width='0.5em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path d='M431.3 388.8c7.5-6.3 16.7-16.1 16.7-31.4 0-13.7-5.7-22.8-10.9-29.1-.6-1.2-1.1-2.3-1.6-3.4l-.2-1.1c-.7-3.5 0-7.1 2-10 3.4-5 5.8-12.3 5.8-25.7 0-11.6-4.8-18.4-9.7-23.2-4.4-4.3-6.1-12.5-4.1-18.3 4.8-13.9.2-28.4-8.2-37.8-10.5-11.8-20.3-13.2-46.4-11.7-18 1.1-55.5 6.9-80.2 10.8-10.1 1.6-18.9 3-21.6 3.2-12.7 1.3-15.2 0-16.4-4.9-.5-2.1 1.9-6.9 4.9-13 4-8.1 9.5-19.2 14.5-35.8 10.1-33.2 9-69.2-2.7-90.2-5.5-9.9-14.8-19.1-26.3-19.1S223.6 50.5 219 56c-3.4 4-2.3 11.6-6.2 26.8-3.1 12.4-7 30.9-12 42-7.5 16.6-39.7 45.1-57 60.4-4.1 3.6-7.6 6.7-10.1 9.1-8.7 8.1-17.6 21.1-25.5 32.7-5.4 7.8-10.4 15.2-13.7 18.5-7.1 7.1-16.6 10.9-22.3 10.9-4.4 0-8 3.6-8 8v159.5c0 4.6 3.7 8.3 8.3 8.3 35.5 0 50.5 5.8 66.4 11.8 12.2 4.7 24.9 9.5 46.4 12.1 32.4 4 74.2 8.1 112.6 8.1 20.4 0 39.9-2 56.6-3.9 31-3.6 64.2-10.8 75.2-37 4.1-9.7 2.2-17.6-.5-23.7-.4-.8-.7-1.7-.8-2.6-.6-3.3.6-6.3 2.9-8.2z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold text-gray-500 '>
                           RENDERING JOBS
                         </span>
@@ -552,16 +584,21 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 512 512'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path d='M232.9 371.6c0 12.7 10.4 23.1 23.1 23.1s23.1-10.4 23.1-23.1c0-12.7-10.4-23.1-23.1-23.1s-23.1 10.3-23.1 23.1zm0-323.6v92.4h46.2V96.1c78.3 11.3 138.7 78.3 138.7 159.9 0 89.4-72.3 161.8-161.8 161.8S94.2 345.4 94.2 256c0-38.8 13.6-74.4 36.5-102.2L256 279.1l32.6-32.6L131.4 89.4v.5C80.8 127.7 48 187.8 48 256c0 114.9 92.9 208 208 208 114.9 0 208-93.1 208-208S370.9 48 256 48h-23.1zm161.8 208c0-12.7-10.4-23.1-23.1-23.1-12.7 0-23.1 10.4-23.1 23.1s10.4 23.1 23.1 23.1c12.7 0 23.1-10.4 23.1-23.1zm-277.4 0c0 12.7 10.4 23.1 23.1 23.1s23.1-10.4 23.1-23.1-10.4-23.1-23.1-23.1-23.1 10.4-23.1 23.1z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold text-gray-500'>
                           WAITING JOBS
                         </span>
@@ -570,16 +607,23 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 24 24'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <g id='Monitor'>
+                              <path d='M18.435,3.06H5.565a2.5,2.5,0,0,0-2.5,2.5v8.88a2.507,2.507,0,0,0,2.5,2.5h2.91l-.37,3H7a.5.5,0,0,0,0,1h10.01a.5.5,0,0,0,0-1H15.9l-.37-3h2.91a2.507,2.507,0,0,0,2.5-2.5V5.56A2.5,2.5,0,0,0,18.435,3.06ZM14.9,19.94H9.115l.37-3h5.03Zm5.04-5.5a1.5,1.5,0,0,1-1.5,1.5H5.565a1.5,1.5,0,0,1-1.5-1.5V5.56a1.5,1.5,0,0,1,1.5-1.5h12.87a1.5,1.5,0,0,1,1.5,1.5Z'></path>
+                            </g>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
                           COMPLETED JOBS
                         </span>
@@ -588,16 +632,26 @@ function Main() {
                         </span>
                       </div>
                       <div>
-                        <a
-                          href='#'
-                          className=''
-                        >
-                          <img
-                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
-                            src='./assets/Setting.png'
-                            alt='gear'
-                          />
-                        </a>
+                        <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
+                          <svg
+                            stroke='currentColor'
+                            fill='currentColor'
+                            stroke-width='0'
+                            viewBox='0 0 24 24'
+                            class='icons'
+                            height='1em'
+                            width='1em'
+                            xmlns='http://www.w3.org/2000/svg'
+                            className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white bg-blue-200 p-2'
+                          >
+                            <path
+                              fill='none'
+                              d='M0 0h24v24H0z'
+                            ></path>
+                            <path d='M20 4H4c-1.1 0-2 .9-2 2v3h2V6h16v3h2V6c0-1.1-.9-2-2-2zM20 18H4v-3H2v3c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-3h-2v3z'></path>
+                            <path d='M14.89 7.55c-.34-.68-1.45-.68-1.79 0L10 13.76l-1.11-2.21A.988.988 0 0 0 8 11H2v2h5.38l1.72 3.45c.18.34.52.55.9.55s.72-.21.89-.55L14 10.24l1.11 2.21c.17.34.51.55.89.55h6v-2h-5.38l-1.73-3.45z'></path>
+                          </svg>
+                        </span>
                         <span className='flex items-center px-2 py-1 text-xs font-semibold  text-gray-500'>
                           FAILED JOBS
                         </span>
@@ -686,7 +740,7 @@ function Main() {
                                   className='text-indigo-600 hover:text-indigo-900'
                                 >
                                   <img
-                                    className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
+                                    className='inline-block h-5 w-5 rounded-full object-cover ring-2 ring-white'
                                     src='./assets/eye-svgrepo-com.svg'
                                     alt='gear'
                                   />
@@ -726,7 +780,7 @@ function Main() {
                                   className='text-indigo-600 hover:text-indigo-900'
                                 >
                                   <img
-                                    className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
+                                    className='inline-block h-5 w-5 rounded-full object-cover ring-2 ring-white'
                                     src='./assets/eye-svgrepo-com.svg'
                                     alt='gear'
                                   />
@@ -766,7 +820,7 @@ function Main() {
                                   className='text-indigo-600 hover:text-indigo-900'
                                 >
                                   <img
-                                    className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
+                                    className='inline-block h-5 w-5 rounded-full object-cover ring-2 ring-white'
                                     src='./assets/eye-svgrepo-com.svg'
                                     alt='gear'
                                   />
@@ -806,7 +860,7 @@ function Main() {
                                   className='text-indigo-600 hover:text-indigo-900'
                                 >
                                   <img
-                                    className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
+                                    className='inline-block h-5 w-5 rounded-full object-cover ring-2 ring-white'
                                     src='./assets/eye-svgrepo-com.svg'
                                     alt='gear'
                                   />
@@ -846,7 +900,7 @@ function Main() {
                                   className='text-indigo-600 hover:text-indigo-900'
                                 >
                                   <img
-                                    className='inline-block h-10 w-10 rounded-full object-cover ring-2 ring-white'
+                                    className='inline-block h-5 w-5 rounded-full object-cover ring-2 ring-white'
                                     src='./assets/eye-svgrepo-com.svg'
                                     alt='gear'
                                   />
@@ -875,8 +929,14 @@ function Main() {
                 </div>
                 <div className='flex w-full sm:flex-row '>
                   <div className='mb-4 sm:ml-4 xl:mr-4'>
+                   
                     <div className=' p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-700'>
-                      <div className='flex items-center justify-between p-4'>
+                    <img
+                      className='inline-block '
+                      src='./assets/img1.jpeg'
+                      alt='gear'
+                    />
+                    {/*   <div className='flex items-center justify-between p-4'>
                         <p className='font-bold text-black text-md dark:text-white'>
                           Balance
                         </p>
@@ -923,12 +983,18 @@ function Main() {
                         <button className='px-4 py-2  text-base rounded-full text-indigo-500 border border-indigo-500 undefined '>
                           Recharge Now
                         </button>
-                      </div>
-                    </div>
+                      </div>*/}
+                    </div> 
                   </div>
                   <div className='mb-4 sm:ml-4 xl:mr-4'>
                     <div className=' p-4 bg-white shadow-lg rounded-2xl dark:bg-gray-700'>
-                      <div className='flex items-center justify-between p-4'>
+                      <img
+                        className='inline-block '
+                        src='./assets/img2.jpeg'
+                        alt='gear'
+                      />
+
+                      {/* <div className='flex items-center justify-between p-4'>
                         <p className='font-bold text-black text-md dark:text-white'>
                           Storage
                         </p>
@@ -955,7 +1021,7 @@ function Main() {
                         <button className='px-4 py-2  text-base rounded-full text-indigo-500 border border-indigo-500 undefined '>
                           View Details
                         </button>
-                      </div>
+                      </div>*/}
                     </div>
                   </div>
                 </div>
