@@ -937,7 +937,7 @@ function Main() {
                       alt='gear'
                     />
                     {/*   <div className='flex items-center justify-between p-4'>
-                        <p className='font-bold text-black text-md dark:text-white'>
+                        <p className='font-bold text-black text-xl dark:text-white'>
                           Balance
                         </p>
                       </div>
@@ -995,7 +995,7 @@ function Main() {
                       />
 
                       {/* <div className='flex items-center justify-between p-4'>
-                        <p className='font-bold text-black text-md dark:text-white'>
+                        <p className='font-bold text-black text-xl dark:text-white'>
                           Storage
                         </p>
                       </div>
