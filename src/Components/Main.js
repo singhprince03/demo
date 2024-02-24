@@ -419,7 +419,7 @@ function Main() {
                     <div className='flex items-center justify-between mb-6'>
                       <div className='flex items-center'>
                         <div className='flex flex-col'>
-                          <span className='ml-2 font-bold text-black text-md dark:text-white'>
+                          <span className='ml-2 font-bold text-black text-xl dark:text-white'>
                             Running Jobs
                           </span>
                         </div>
@@ -543,7 +543,7 @@ function Main() {
                     <div className='flex items-center justify-between mb-6'>
                       <div className='flex items-center'>
                         <div className='flex flex-col'>
-                          <span className='ml-2 font-bold text-black text-md dark:text-white'>
+                          <span className='ml-2 font-bold text-black text-xl dark:text-white'>
                             Running Frames
                           </span>
                         </div>
@@ -665,7 +665,7 @@ function Main() {
                 <div className='container max-w-3xl mx-auto'>
                   <div className='flex flex-col items-center px-5 py-5 bg-white xs:flex-row xs:justify-between rounded-2xl shadow-lg'>
                     <div className='flex flex-row justify-between w-full mb-1 sm:mb-0'>
-                      <h2 className='ml-2 font-bold text-black text-md dark:text-white'>
+                      <h2 className='ml-2 font-bold text-black text-xl dark:text-white'>
                         Active Jobs
                       </h2>
                     </div>
@@ -917,7 +917,7 @@ function Main() {
               <div className='w-full sm:w-1/2'>
                 <div className='mx-0 mb-4 sm:ml-4 xl:mr-4'>
                   <div className='w-full bg-white shadow-lg rounded-2xl dark:bg-gray-700'>
-                    <p className='p-4 font-bold text-black text-md dark:text-white'>
+                    <p className='p-4 font-bold text-black text-xl dark:text-white'>
                       Network
                     </p>
                     <Card className='w-full bg-white shadow-lg rounded-2xl dark:bg-gray-700'>
